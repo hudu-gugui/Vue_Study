@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+<!--    <hudu></hudu>-->
+<!--    <li v-for="item in items">-->
+<!--        {{item}}-->
+<!--    </li>-->
+    <!--组件：传递给组件中的值：props-->
+    <hudu v-for="item in items" v-bind:hu="item"></hudu>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+
+<script>
+
+    //定义一个Vue组件component
+    Vue.component("hudu",{
+        props: ['hu'],
+        template: '<li>{{hu}}</li>'
+    })
+
+    let mv = new Vue({
+        el: "#app",
+        data: {
+            items: ["hudu","Java","Html"]
+        },
+        methods: {
+            sayHi: function () {
+
+            }
+        }
+    })
+</script>
+</body>
+</html>

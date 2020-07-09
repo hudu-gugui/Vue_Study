@@ -1,0 +1,20 @@
+{
+  "name": "bilibili",
+  "url": "https://www.bilibili.com",
+  "page": 1,
+  "isNonProfit": true,
+  "address": {
+    "street": "The Earth",
+    "city": "The Earth",
+    "country": "China"
+  },
+  "links": [
+    {
+      "name": "test",
+      "url": "https://test.com"
+    },{
+      "name": "hudu",
+      "url": "https://hudu.com"
+    }
+  ]
+}
